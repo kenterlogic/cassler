@@ -13,9 +13,9 @@ nav {
   width: 1080px;
   margin: 16px auto; }
 
-@media (max-device-width:1024px) {
+@media (max-width:1024px) {
   nav {
     width: 810px; } }
-@media (max-device-width:768px) {
+@media (max-width:768px) {
   nav {
     width: 100%; } }
