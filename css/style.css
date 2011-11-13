@@ -11,7 +11,7 @@ header {
 
 nav {
   width: 1080px;
-  margin: auto; }
+  margin: 16px auto; }
 
 @media (max-device-width:1024px) {
   nav {
