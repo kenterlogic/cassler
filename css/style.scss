@@ -1,0 +1,39 @@
+// grid sorcery WHAZHAM!
+$gutter:		50;
+$columnWidth:	40;
+@mixin col($n:1) { width: (($n*($columnWidth+$gutter))-$gutter)*1px; margin:0 ($gutter/2); }
+@mixin span($n:1) { width: (($n*($columnWidth+$gutter))-$gutter)*1px; }
+@mixin contain($n:1) { width: ($n*($columnWidth+$gutter))*1px; }
+
+// let's try to avoid IDs and classes
+body {
+	text-align:center;
+	margin:0;
+	}
+header {
+	background:#333;
+	color:#fff;
+	margin:0;
+}
+nav {
+	@include contain(12);
+	margin:auto;
+	background:#555;
+}
+
+
+
+// for tablets
+@media (max-device-width:1024px) {
+	
+	nav {@include contain(9);}
+	
+}
+
+
+// for mobile
+@media (max-device-width:768px) {
+
+	nav {width:100%;}
+	
+}
