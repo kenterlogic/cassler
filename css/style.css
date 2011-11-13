@@ -3,14 +3,15 @@ body {
   margin: 0; }
 
 header {
-  background: #333;
+  background: #334455 url(../img/denim.png) repeat-x;
+  height: 57px;
+  overflow: hidden;
   color: #fff;
   margin: 0; }
 
 nav {
   width: 1080px;
-  margin: auto;
-  background: #555; }
+  margin: auto; }
 
 @media (max-device-width:1024px) {
   nav {

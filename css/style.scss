@@ -11,14 +11,15 @@ body {
 	margin:0;
 	}
 header {
-	background:#333;
+	background:#345 url(../img/denim.png) repeat-x;
+	height:57px;
+	overflow:hidden;
 	color:#fff;
 	margin:0;
 }
 nav {
 	@include contain(12);
 	margin:auto;
-	background:#555;
 }
 
 
