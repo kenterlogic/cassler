@@ -6,10 +6,15 @@ $columnWidth:	40;
 @mixin contain($n:1) { width: ($n*($columnWidth+$gutter))*1px; }
 
 // let's try to avoid IDs and classes
+@import url(http://fonts.googleapis.com/css?family=Petrona);
 body {
 	text-align:center;
 	margin:0;
+	font-size:16px;
+	font-family: 'Petrona';
+	line-height:22px;
 	}
+p {margin-bottom:1em;}
 header {
 	background:#345 url(../img/denim.png) repeat-x;
 	height:57px;
@@ -18,23 +23,68 @@ header {
 	margin:0;
 }
 nav {
-	@include contain(12);
+	width:90%;
 	margin:16px auto;
+	text-align:right;
+	ul, li {
+		display:inline;
+		margin-left:3em;
+		margin-right:0;
+		list-style:none;
+	}
+}
+article {
+	width:50%;
+	margin:auto;
+	text-align:left;
+	hgroup {margin-bottom:1em;	}
 }
 
 
+// large format
 
-// for tablets
-@media (max-device-width:1024px) {
-	
-	nav {@include contain(9);}
-	
+@media (min-width:1200px) {
+	body {
+		text-align:center;
+		margin:0;
+		font-size:19px;
+		line-height:28px;
+		}
 }
 
+
+// for small screens
+@media (max-width:1024px) {
+	body {
+		font-size:15px;
+		line-height:20px;
+	}
+}
+
+
+// for tablet
+@media (max-width:768px) {
+
+	body {
+		text-align:center;
+		margin:0;
+		font-size:13px;
+		line-height:18px;
+		}
+
+}
 
 // for mobile
-@media (max-device-width:768px) {
 
-	nav {width:100%;}
+@media (max-width:540px) {
+
+	body {
+		text-align:center;
+		margin:0;
+		font-size:16px;
+		line-height:24px;
+		}
 	
+	article {width:90%;margin:5%;}
+
 }
