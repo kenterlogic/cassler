@@ -1,61 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Petrona);
 body {
-  text-align: center;
-  margin: 0;
-  font-size: 16px;
-  font-family: 'Petrona';
-  line-height: 22px; }
-
-p {
-  margin-bottom: 1em; }
-
-header {
-  background: #334455 url(../img/denim.png) repeat-x;
-  height: 57px;
-  overflow: hidden;
-  color: #fff;
-  margin: 0; }
-
-nav {
-  width: 90%;
-  margin: 16px auto;
-  text-align: right; }
-  nav ul, nav li {
-    display: inline;
-    margin-left: 3em;
-    margin-right: 0;
-    list-style: none; }
+	text-align:center;
+}
 
 article {
-  width: 50%;
-  margin: auto;
-  text-align: left; }
-  article hgroup {
-    margin-bottom: 1em; }
-
-@media (min-width:1200px) {
-  body {
-    text-align: center;
-    margin: 0;
-    font-size: 19px;
-    line-height: 28px; } }
-@media (max-width:1024px) {
-  body {
-    font-size: 15px;
-    line-height: 20px; } }
-@media (max-width:768px) {
-  body {
-    text-align: center;
-    margin: 0;
-    font-size: 13px;
-    line-height: 18px; } }
-@media (max-width:540px) {
-  body {
-    text-align: center;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px; }
-
-  article {
-    width: 90%;
-    margin: 5%; } }
+	width:50%;
+	margin:auto;
+}
