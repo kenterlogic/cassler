@@ -12,7 +12,7 @@
 	<meta name="description" content="Handcrafted hypertext from Burlington, Vermont by Darin Cassler. Fine digital craftsmanship for over a decade. Design from the eye of a painter, structured with the mind of an engineer.">
 	<meta name="author" content="Darin Cassler">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php bloginfo(template_url)/css/style.css">
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
